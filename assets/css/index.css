@@ -33,6 +33,7 @@ line-height: 1.5;
     height: 75vh;
 }
 .hero-col {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 10px;
+    box-shadow: .5rem 1rem 1rem  rgba(0, 0, 0, 0.2);
 }
