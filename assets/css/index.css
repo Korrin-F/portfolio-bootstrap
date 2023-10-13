@@ -32,10 +32,7 @@ line-height: 1.5;
     background-repeat: no-repeat;
     height: 75vh;
 }
-/* .hero-col-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-} */
+.hero-col {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
