@@ -15,4 +15,27 @@
     --small-border-style: 0.1rem solid;
     --place-column-items: start start;
   }
-  
+body {
+/* margin: 0;
+padding: 0; */
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+line-height: 1.5;
+}
+.d-flex {
+    border: 1px solid gold;
+    height: 50px;
+}
+.hero-cont {
+    background-image: url(../images/hero1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+/* .hero-col-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} */
