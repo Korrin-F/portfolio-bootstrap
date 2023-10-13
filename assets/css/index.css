@@ -1,0 +1,18 @@
+:root {
+    --dark-blue: rgb(26, 47, 65);
+    --med-blue: rgb(70, 125, 138);
+    --light-blue: rgb(119, 170, 169);
+    --pink: rgb(237, 161, 175);
+    --orange: rgb(243, 154, 94);
+    --yellow: 250, 200, 130;
+    --red: rgb(167, 54, 74); 
+    --alpha: 0.3;
+    --text-padding: 0.5rem;
+    --column-padding: 0.5rem;
+    --page-space: 5vw;
+    --border-style: 0.3rem solid;
+    --med-border-style: 0.2rem solid;
+    --small-border-style: 0.1rem solid;
+    --place-column-items: start start;
+  }
+  
