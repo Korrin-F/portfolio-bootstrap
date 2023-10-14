@@ -22,9 +22,13 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 line-height: 1.5;
 }
 h1 {
-    font-family: "komet", sans-serif;
+    /* font-family: "komet", sans-serif;
     font-weight: 900;
+    font-style: normal; */
+    font-family: "monarcha", serif;
+    font-weight: 700;
     font-style: normal;
+    color: var(--dark-blue);
 }
 .d-flex {
     border: 1px solid gold;
@@ -34,6 +38,9 @@ h1 {
     background-color: rgba(255, 255, 255, 0.25);
     z-index: 100;
 }
+.nav-cont img {
+    width: 75px;
+}
 .hero-cont {
     background-image: url(../images/hero1.jpg);
     background-size: cover;
@@ -41,9 +48,24 @@ h1 {
     background-repeat: no-repeat;
     height: 75vh;
 }
-.hero-cont h2 {
-    font-family: "komet-sc", sans-serif;
+.hero-cont h2, h1 span {
+    /* font-family: "komet-sc", sans-serif;
     font-weight: 500;
+    font-style: italic; */
+    /* font-family: "roca", sans-serif;
+    font-weight: 100;
+    font-style: italic; */
+    /* font-family: "roca", sans-serif;
+    font-weight:  100;
+    font-style: italic; */
+    /* font-family: "gelica", sans-serif;
+    font-weight: 300;
+    font-style: italic; */
+    /* font-family: "monarcha", serif;
+    font-weight: 300;
+    font-style: italic; */
+    font-family: "soleil", sans-serif;
+    font-weight: 300;
     font-style: italic;
 
 }
