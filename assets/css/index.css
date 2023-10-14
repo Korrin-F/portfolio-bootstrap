@@ -30,6 +30,10 @@ h1 {
     border: 1px solid gold;
     height: 50px;
 }
+.nav-cont {
+    background-color: rgba(255, 255, 255, 0.25);
+    z-index: 100;
+}
 .hero-cont {
     background-image: url(../images/hero1.jpg);
     background-size: cover;
