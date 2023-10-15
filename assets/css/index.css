@@ -110,7 +110,8 @@ h1 span {
 #kangaroo-mouse,
 #baby-deer,
 #hedgehog,
-#hedgehog1 {
+#hedgehog1,
+#otter {
     position: relative;
 }
 #kangaroo-mouse {
@@ -131,6 +132,12 @@ h1 span {
     width: 120%;
     bottom: -2.25rem;
     left: -1rem;
+}
+#otter {
+    width: 120%;
+    left: -2rem;
+    transform: scaleX(-1);
+    margin-top: 1rem;
 }
 
 /* adds styling to the nav menu after the menu items are collapsed */
