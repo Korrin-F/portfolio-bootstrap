@@ -6,6 +6,7 @@
     --rgb-rose: 196, 151, 153;  /*  58 */
     --box-shadow:  rgba(220, 214, 107, 0.376) -3px -3px 6px 1px inset, rgba(255, 253, 214, 0.832) 3px 3px 6px 0px inset, rgba(255, 251, 149, 0) 6px 2px 16px 0px, rgba(255, 253, 201, 0) -6px -2px 16px 0px; 
     --box-shadow-hover: rgba(220, 214, 107, 0.376) -3px -3px 6px 1px inset, rgba(255, 253, 214, 0.832) 3px 3px 6px 0px inset, rgba(255, 251, 149, 0.831) 6px 2px 16px 0px, rgba(255, 253, 201, 0.8) -6px -2px 16px 0px; 
+    --card-shadow-hover:  rgba(255, 251, 149, 0.831) 6px 2px 16px 0px, rgba(255, 253, 201, 0.8) -6px -2px 16px 0px; 
     --text-shadow-yellow:  rgba(255, 251, 149, 0.831) 6px 2px 16px , rgba(255, 253, 201, 0.8) -6px -2px 16px; 
     --transition-text-shadow: text-shadow 0.4s ease-out;
     --transition-box-shadow: box-shadow 0.4s ease-out;
@@ -101,13 +102,14 @@ h1 span {
 .card:hover {
     border: 8px solid var(--yellow);
     text-decoration: none;
-    box-shadow: var(--box-shadow-hover);  
+    box-shadow: var(--card-shadow-hover);  
 }
 .card-body {
     padding-bottom: 0;
 }
 #kangaroo-mouse,
-#baby-deer {
+#baby-deer,
+#hedgehog {
     position: relative;
 }
 #kangaroo-mouse {
@@ -118,6 +120,11 @@ h1 span {
 #baby-deer {
     bottom: -.75rem;
     
+}
+#hedgehog {
+    width: 120%;
+    left: -2.5rem;
+    bottom: -1.5rem;
 }
 
 /* adds styling to the nav menu after the menu items are collapsed */
