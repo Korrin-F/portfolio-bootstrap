@@ -94,21 +94,31 @@ h1 span {
 .card {
     border: 8px solid var(--yellow);
     text-decoration: none;
+    height: max-content;
     transition: var(--transition-box-shadow);
     background: linear-gradient(to top, white, #d6bcae 3%, white 7%, var(--yellow));
 }
 .card:hover {
     border: 8px solid var(--yellow);
     text-decoration: none;
-    box-shadow: var(--box-shadow-hover);
-    
+    box-shadow: var(--box-shadow-hover);  
+}
+.card-body {
+    padding-bottom: 0;
+}
+#kangaroo-mouse,
+#baby-deer {
+    position: relative;
 }
 #kangaroo-mouse {
     width: 120%;
-    margin-bottom: -2rem;
-    margin-left: -2.1rem;
+    bottom: -2rem;
+    left: -2.1rem;
 }
-
+#baby-deer {
+    bottom: -.75rem;
+    
+}
 
 /* adds styling to the nav menu after the menu items are collapsed */
 @media only screen and (max-width: 992px) {
