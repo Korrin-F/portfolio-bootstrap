@@ -75,7 +75,27 @@ h1 span {
 .hero-cont h2 {
     color: var(--dark);
 }
-
+/* .circle {
+    background-color: var(--yellow);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: var(--box-shadow-hover);
+}
+.circle2 {
+    border: 5px solid var(--yellow);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+} */
 
 /* ------- BUTTONS ------- */
 .button , .navbar-toggler {
@@ -118,6 +138,26 @@ h1 span {
     font-weight: 600;
     font-style: italic;
     font-size: 1.5rem;  
+}
+#woman-deer {
+    width: 150%;
+    position: relative;
+    right: -7rem;
+    z-index: 1;
+}
+#woman-cont {
+    margin-left: -7rem;
+}
+#contact {
+    /* background-color: #d7b9ab; */
+    border-radius: 50%;
+    height: 100%;
+    margin-top: 4rem;
+}
+.about-text {
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
 }
 /* ------- Section Header ------- */
 .section-header {
