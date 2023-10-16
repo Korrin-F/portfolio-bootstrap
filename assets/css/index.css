@@ -76,6 +76,7 @@ h1 span {
     color: var(--dark);
 }
 
+
 /* ------- BUTTONS ------- */
 .button , .navbar-toggler {
     background-color: var(--yellow);
@@ -105,12 +106,20 @@ h1 span {
 #about-me h2 {
     background-color: rgb(var(--rgb-rose));
 }
-
-
+#about-me h3 {
+    color: var(--dark);
+    font-family: var(--font-family-main);
+}
 #about-me p {
     color: var(--dark);
 }
-/* ------- Cards ------- */
+#about-me li {
+    color: var(--dark);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5rem;  
+}
+/* ------- Section Header ------- */
 .section-header {
     font-family: var(--font-family-main);
     color: var(--dark);
@@ -124,6 +133,8 @@ h1 span {
     position: relative;
     bottom: -2rem;
 }
+
+/* ------- Cards ------- */
 #work-header-bird {
     width: 10%;
     position: relative;
