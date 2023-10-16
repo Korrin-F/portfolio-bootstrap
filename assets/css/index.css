@@ -54,11 +54,11 @@ h1 span {
     text-shadow: var(--text-shadow-yellow);
 }
 .hero-cont {
-    background-image: url(../images/hero1.jpg);
+    background-image: url(../images/hero-clean.png);
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 110vh;
 }
 .hero-cont h2, h1 span {
     font-family: "soleil", sans-serif;
