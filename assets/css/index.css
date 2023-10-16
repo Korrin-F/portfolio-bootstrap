@@ -3,20 +3,25 @@
     --yellow: #EDFFAB;
     --rgb-yellow: 237,255,171;
     --light-blue: #98DFEA;
+    --rose: rgb(196, 151, 153);
     --rgb-rose: 196, 151, 153;  /*  58 */
     --box-shadow:  rgba(220, 214, 107, 0.376) -3px -3px 6px 1px inset, rgba(255, 253, 214, 0.832) 3px 3px 6px 0px inset, rgba(255, 251, 149, 0) 6px 2px 16px 0px, rgba(255, 253, 201, 0) -6px -2px 16px 0px; 
     --box-shadow-hover: rgba(220, 214, 107, 0.376) -3px -3px 6px 1px inset, rgba(255, 253, 214, 0.832) 3px 3px 6px 0px inset, rgba(255, 251, 149, 0.831) 6px 2px 16px 0px, rgba(255, 253, 201, 0.8) -6px -2px 16px 0px; 
-    --card-shadow-hover:  rgba(255, 251, 149, 0.831) 6px 2px 16px 0px, rgba(255, 253, 201, 0.8) -6px -2px 16px 0px; 
+    --card-shadow-hover:  rgba(255, 251, 149, 0.831) 18px 6px 32px 0px, rgba(255, 253, 201, 0.8) -18px -6px 32px 0px; 
     --text-shadow-yellow:  rgba(255, 251, 149, 0.831) 6px 2px 16px , rgba(255, 253, 201, 0.8) -6px -2px 16px; 
     --transition-text-shadow: text-shadow 0.4s ease-out;
     --transition-box-shadow: box-shadow 0.4s ease-out;
+    --transition-text-color: color 0.4s ease-out;
+    --font-family-main: "monarcha", serif;
+    --font-family-secondary: "soleil", sans-serif;
+    --font-family-code: "Fira Code", monospace;
   }
 * {
 box-sizing: border-box;
 }
 body {
-font-family: "soleil", sans-serif;
-font-weight: 300;
+font-family: var(--font-family-secondary);
+/* font-weight: 300; */
 font-style: normal;
 line-height: 1.5;
 }
@@ -27,13 +32,13 @@ line-height: 1.5;
     color: var(--dark);
 }
 .navbar-brand h3{
-    font-family: monospace;
+    font-family: var(--font-family-code);
     font-weight: 800;
     color: var(--dark);
     transition: var(--transition-text-shadow);
 }
 .nav-link {
-    font-family: "soleil", sans-serif;
+    font-family: var(--font-family-secondary);
     font-weight: 600;
     color: var(--dark);
     transition: var(--transition-text-shadow); 
@@ -45,7 +50,7 @@ line-height: 1.5;
 
 /* ------- HERO ------- */
 h1 {
-    font-family: "monarcha", serif;
+    font-family: var(--font-family-main);
     font-weight: 700;
     font-style: normal;
     color: var(--dark);
@@ -54,14 +59,14 @@ h1 span {
     text-shadow: var(--text-shadow-yellow);
 }
 .hero-cont {
-    background-image: url(../images/hero-clean.png);
+    background-image: url(../images/hero-clean-shadow.png);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
     height: 110vh;
 }
 .hero-cont h2, h1 span {
-    font-family: "soleil", sans-serif;
+    font-family: var(--font-family-secondary);
     font-weight: 500;
     font-style: italic;
     color: var(--yellow);
@@ -92,10 +97,31 @@ h1 span {
 }
 
 /* ------- Cards ------- */
+.section-header {
+    font-family: var(--font-family-main);
+    color: var(--dark);
+    border-bottom: 4px solid var(--dark);
+    margin-bottom: 4rem;
+}
+.section-header h2 {
+    width: max-content;
+    background-color: white;
+    position: relative;
+    bottom: -2rem;
+}
+#work-header-bird {
+    width: 10%;
+    position: relative;
+    bottom: -2.5rem;
+}
+#work-spacer {
+    width: 12%; /* counters the width of the bird so the text stays centered */
+}
 .card {
     border: 8px solid var(--yellow);
+    border-radius: 20px;
     text-decoration: none;
-    height: max-content;
+    /* height: max-content; */
     transition: var(--transition-box-shadow);
     background: linear-gradient(to top, white, #d6bcae 3%, white 7%, var(--yellow));
 }
@@ -106,12 +132,22 @@ h1 span {
 }
 .card-body {
     padding-bottom: 0;
+    color: var(--dark);
+    transition: var(--transition-text-color);
+}
+.card-body:hover {
+    color: var(--rose);
+    
+}
+.card-subtitle {
+    font-weight: 600;
 }
 #kangaroo-mouse,
 #baby-deer,
 #hedgehog,
 #hedgehog1,
-#otter {
+#otter,
+#bird {
     position: relative;
 }
 #kangaroo-mouse {
@@ -138,6 +174,12 @@ h1 span {
     left: -2rem;
     transform: scaleX(-1);
     margin-top: 1rem;
+}
+#bird {
+    width: 115%;
+    left: -.5rem;
+    bottom: -1rem;
+    transform: scaleX(-1);
 }
 
 /* adds styling to the nav menu after the menu items are collapsed */
