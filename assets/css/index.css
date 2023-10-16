@@ -59,11 +59,12 @@ h1 span {
     text-shadow: var(--text-shadow-yellow);
 }
 .hero-cont {
-    background-image: url(../images/hero-clean-shadow.png);
+    background-image: url(../images/hero-clean.png);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
     height: 110vh;
+    background-color: rgb(var(--rgb-rose));
 }
 .hero-cont h2, h1 span {
     font-family: var(--font-family-secondary);
@@ -96,11 +97,25 @@ h1 span {
     color: var(--dark) !important;
 }
 
+/* ------- ABOUT ------- */
+#about-me {
+    background-color: rgb(var(--rgb-rose));
+    margin-top: -3rem;
+}
+#about-me h2 {
+    background-color: rgb(var(--rgb-rose));
+}
+
+
+#about-me p {
+    color: var(--dark);
+}
 /* ------- Cards ------- */
 .section-header {
     font-family: var(--font-family-main);
     color: var(--dark);
     border-bottom: 4px solid var(--dark);
+    /* border-bottom: 4px solid var(--yellow); */
     margin-bottom: 4rem;
 }
 .section-header h2 {
