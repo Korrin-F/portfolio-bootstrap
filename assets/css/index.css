@@ -250,6 +250,25 @@ h1 span {
 #skills li {
     color: var(--dark);
 }
+#skills ul {
+    border: 3px solid var(--dark);
+    border-radius: 10px;
+    /* width: 100%; */
+    /* padding: 1rem 2rem 1rem 2rem; */
+}
+.characteristic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: var(--yellow) solid 6px;
+    border-radius: 50%;
+    min-width: 325px;
+    height: 325px;
+    padding: 3rem;
+  }
+  
+  
 
 /* adds styling to the nav menu after the menu items are collapsed */
 @media only screen and (max-width: 992px) {
