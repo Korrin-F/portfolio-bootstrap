@@ -59,11 +59,12 @@ h1 span {
     text-shadow: var(--text-shadow-yellow);
 }
 .hero-cont {
-    background-image: url(../images/hero-clean-shadow.png);
+    background-image: url(../images/hero-clean.png);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
     height: 110vh;
+    background-color: rgb(var(--rgb-rose));
 }
 .hero-cont h2, h1 span {
     font-family: var(--font-family-secondary);
@@ -74,6 +75,7 @@ h1 span {
 .hero-cont h2 {
     color: var(--dark);
 }
+
 
 /* ------- BUTTONS ------- */
 .button , .navbar-toggler {
@@ -96,11 +98,61 @@ h1 span {
     color: var(--dark) !important;
 }
 
-/* ------- Cards ------- */
+/* ------- ABOUT ------- */
+#about-me {
+    background-color: rgb(var(--rgb-rose));
+    margin-top: -3rem;
+}
+#about-me h2 {
+    background-color: rgb(var(--rgb-rose));
+}
+#about-me h3 {
+    color: var(--dark);
+    font-family: var(--font-family-main);
+}
+#about-me p {
+    color: var(--dark);
+}
+#about-me li {
+    color: var(--dark);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5rem;  
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    justify-content: center;
+    align-items: center; 
+    margin-top: 3rem;
+}
+#contact h3 {
+    background-color: rgb(var(--rgb-rose));
+    position: relative;
+    bottom: -1.5rem;
+    padding-inline: 1rem;
+    width: max-content;
+    margin: auto;
+}
+#contact-content {
+    border: 3px solid var(--dark);
+    border-radius: 10px;
+    width: max-content;
+    padding: 2.5rem 3rem 2rem 3rem;
+}
+.contact-button {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+/* ------- Section Header ------- */
 .section-header {
     font-family: var(--font-family-main);
     color: var(--dark);
     border-bottom: 4px solid var(--dark);
+    /* border-bottom: 4px solid var(--yellow); */
     margin-bottom: 4rem;
 }
 .section-header h2 {
@@ -109,6 +161,8 @@ h1 span {
     position: relative;
     bottom: -2rem;
 }
+
+/* ------- Cards ------- */
 #work-header-bird {
     width: 10%;
     position: relative;
