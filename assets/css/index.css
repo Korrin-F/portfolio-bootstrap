@@ -9,9 +9,11 @@
     --box-shadow-hover: rgba(220, 214, 107, 0.376) -3px -3px 6px 1px inset, rgba(255, 253, 214, 0.832) 3px 3px 6px 0px inset, rgba(255, 251, 149, 0.831) 6px 2px 16px 0px, rgba(255, 253, 201, 0.8) -6px -2px 16px 0px; 
     --card-shadow-hover:  rgba(255, 251, 149, 0.831) 18px 6px 32px 0px, rgba(255, 253, 201, 0.8) -18px -6px 32px 0px; 
     --text-shadow-yellow:  rgba(255, 251, 149, 0.831) 6px 2px 16px , rgba(255, 253, 201, 0.8) -6px -2px 16px; 
+    --circle-shadow: rgba(255, 251, 149, 0.831) 6px 2px 16px 0px, rgba(255, 253, 201, 0.8) -6px -2px 16px 0px;
     --transition-text-shadow: text-shadow 0.4s ease-out;
     --transition-box-shadow: box-shadow 0.4s ease-out;
     --transition-text-color: color 0.4s ease-out;
+    --transition-background-color: background-color 0.4s ease-out;
     --font-family-main: "monarcha", serif;
     --font-family-secondary: "soleil", sans-serif;
     --font-family-code: "Fira Code", monospace;
@@ -236,6 +238,93 @@ h1 span {
     bottom: -1rem;
     transform: scaleX(-1);
 }
+
+/* ------- Skills & Characteristics ------- */
+#skills {
+    background-color: var(--rose);
+    /* min-height: 100vh; */
+}
+#skills h2,
+#skills h3 {
+    background-color: var(--rose);
+}
+#skills h3,
+#skills p,
+#skills li {
+    color: var(--dark);
+}
+#skills h3 {
+    font-family: var(--font-family-code);
+    position: relative;
+    z-index: 2;
+    width: max-content;
+
+}
+#skills ul {
+    border: 3px solid var(--dark);
+    border-radius: 10px;
+    transition: var(--transition-background-color);
+    /* width: 100%; */
+    /* padding: 1rem 2rem 1rem 2rem; */
+}
+#skills ul:hover {
+    background-color: var(--yellow);
+    border: 3px solid var(--yellow);
+    
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 325px;
+    height: 325px;
+    padding: 3rem;
+    position: relative;
+  }
+  .value p {
+    position: relative;
+    z-index: 2;
+  }
+  .value h5 {
+    position: relative;
+    z-index: 2;
+    color: var(--dark);
+    font-weight: 600;
+  }
+  #values {
+    position: relative;
+  }
+  .values-border {
+    content: '';
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    right: 17%;
+    bottom: 0;
+    border: 3px solid var(--dark); /* Border thickness and color */
+    border-radius: 15px; /* Adjust for the desired border appearance */
+    z-index: 1; /* Send it to the back */
+  }
+  .circle {
+    background-color: var(--yellow);
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    position: absolute; 
+    z-index: 1;
+    top: 50%; 
+    left: 50%;
+    box-shadow: var(--circle-shadow); 
+  }
+  #circle1 {
+    transform: translate(-110%, -70%); /* Center the circle within its parent */
+  }
+  #circle2 {
+    transform: translate(10%, -50%);
+  }
 
 /* adds styling to the nav menu after the menu items are collapsed */
 @media only screen and (max-width: 992px) {
