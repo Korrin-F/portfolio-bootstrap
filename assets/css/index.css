@@ -237,6 +237,20 @@ h1 span {
     transform: scaleX(-1);
 }
 
+/* ------- Skills & Characteristics ------- */
+#skills {
+    background-color: var(--rose);
+    /* min-height: 100vh; */
+}
+#skills h2 {
+    background-color: var(--rose);
+}
+#skills h3,
+#skills p,
+#skills li {
+    color: var(--dark);
+}
+
 /* adds styling to the nav menu after the menu items are collapsed */
 @media only screen and (max-width: 992px) {
     .navbar-collapse {
