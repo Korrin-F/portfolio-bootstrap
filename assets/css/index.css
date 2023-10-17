@@ -8,7 +8,8 @@
     --box-shadow:  rgba(220, 214, 107, 0.376) -3px -3px 6px 1px inset, rgba(255, 253, 214, 0.832) 3px 3px 6px 0px inset, rgba(255, 251, 149, 0) 6px 2px 16px 0px, rgba(255, 253, 201, 0) -6px -2px 16px 0px; 
     --box-shadow-hover: rgba(220, 214, 107, 0.376) -3px -3px 6px 1px inset, rgba(255, 253, 214, 0.832) 3px 3px 6px 0px inset, rgba(255, 251, 149, 0.831) 6px 2px 16px 0px, rgba(255, 253, 201, 0.8) -6px -2px 16px 0px; 
     --card-shadow-hover:  rgba(255, 251, 149, 0.831) 18px 6px 32px 0px, rgba(255, 253, 201, 0.8) -18px -6px 32px 0px; 
-    --text-shadow-yellow:  rgba(255, 251, 149, 0.831) 6px 2px 16px , rgba(255, 253, 201, 0.8) -6px -2px 16px; 
+    --text-shadow-yellow:  rgba(255, 251, 149, 0.831) 6px 2px 16px , rgba(255, 253, 201, 0.8) -6px -2px 16px;
+    --text-shadow-hover: rgba(255, 251, 149, 0.831) 3px 1px 16px , rgba(255, 253, 201, 0.8) -3px -1px 16px;
     --circle-shadow: rgba(255, 251, 149, 0.831) 6px 2px 16px 0px, rgba(255, 253, 201, 0.8) -6px -2px 16px 0px;
     --transition-text-shadow: text-shadow 0.4s ease-out;
     --transition-box-shadow: box-shadow 0.4s ease-out;
@@ -83,15 +84,17 @@ h1 span {
 .button , .navbar-toggler {
     background-color: var(--yellow);
     color: var(--dark); 
-    font-weight: 600;
+    font-weight: 400;
     border: none;
     box-shadow: var(--box-shadow);
     transition: var(--transition-box-shadow);
+    width: max-content;
+    margin: auto;
 }
 .button:hover, .navbar-toggler:hover {
     background-color: var(--yellow);
     color: rgb(var(--rgb-rose));
-    font-weight: 600;
+    font-weight: 400;
     box-shadow: var(--box-shadow-hover);
 }
 .button:active, .navbar-toggler:active {
@@ -241,27 +244,24 @@ h1 span {
 
 /* ------- Skills & Characteristics ------- */
 #skills {
-    background-color: var(--rose);
+    background-color: var(--dark);
     /* min-height: 100vh; */
+}
+#skills .section-header {
+    border-bottom-color: var(--rose);
 }
 #skills h2,
 #skills h3 {
-    background-color: var(--rose);
+    background-color: var(--dark);
 }
+#skills h2,
 #skills h3,
 #skills p,
 #skills li {
-    color: var(--dark);
-}
-#skills h3 {
-    font-family: var(--font-family-code);
-    position: relative;
-    z-index: 2;
-    width: max-content;
-
+    color: var(--rose);
 }
 #skills ul {
-    border: 3px solid var(--dark);
+    border: 3px solid var(--rose);
     border-radius: 10px;
     transition: var(--transition-background-color);
     /* width: 100%; */
@@ -269,10 +269,24 @@ h1 span {
 }
 #skills ul:hover {
     background-color: var(--yellow);
-    border: 3px solid var(--yellow);
-    
+    border: 3px solid var(--yellow);  
 }
 
+/* ------- Values ------- */
+#key-value {
+    background-color: var(--rose);
+    /* min-height: 100vh; */
+}
+#key-value h2,
+#key-value h3 {
+    background-color: var(--rose);
+}
+#key-value h3 {
+    font-family: var(--font-family-code);
+    position: relative;
+    z-index: 2;
+    width: max-content;
+}
 .value {
     display: flex;
     flex-direction: column;
@@ -326,6 +340,20 @@ h1 span {
     transform: translate(10%, -50%);
   }
 
+/* ------- Footer ------- */
+#footer {
+    background-color: var(--dark);
+}
+#footer .nav-link,
+#footer h6,
+#footer p {
+    color: var(--rose);
+}
+#footer .nav-link:hover {
+    color: var(--yellow);
+    text-shadow: var(--text-shadow-hover);
+}
+
 /* adds styling to the nav menu after the menu items are collapsed */
 @media only screen and (max-width: 992px) {
     .navbar-collapse {
@@ -335,6 +363,6 @@ h1 span {
     }
     .nav-link:hover {
         color: rgb(var(--rgb-rose));
-        text-shadow: var(--text-shadow-yellow);
+        text-shadow: var(--text-shadow-hover);
     }
 }
