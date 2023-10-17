@@ -75,27 +75,7 @@ h1 span {
 .hero-cont h2 {
     color: var(--dark);
 }
-/* .circle {
-    background-color: var(--yellow);
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    box-shadow: var(--box-shadow-hover);
-}
-.circle2 {
-    border: 5px solid var(--yellow);
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-} */
+
 
 /* ------- BUTTONS ------- */
 .button , .navbar-toggler {
@@ -139,25 +119,33 @@ h1 span {
     font-style: italic;
     font-size: 1.5rem;  
 }
-#woman-deer {
-    width: 150%;
-    position: relative;
-    right: -7rem;
-    z-index: 1;
-}
-#woman-cont {
-    margin-left: -7rem;
-}
 #contact {
-    /* background-color: #d7b9ab; */
-    border-radius: 50%;
-    height: 100%;
-    margin-top: 4rem;
-}
-.about-text {
     display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    justify-content: center;
+    align-items: center; 
+    margin-top: 3rem;
+}
+#contact h3 {
+    background-color: rgb(var(--rgb-rose));
+    position: relative;
+    bottom: -1.5rem;
+    padding-inline: 1rem;
+    width: max-content;
+    margin: auto;
+}
+#contact-content {
+    border: 3px solid var(--dark);
+    border-radius: 10px;
+    width: max-content;
+    padding: 2.5rem 3rem 2rem 3rem;
+}
+.contact-button {
+    display: flex;
+    height: 100%;
     align-items: center;
-    padding-top: 3rem;
+
 }
 /* ------- Section Header ------- */
 .section-header {
