@@ -59,12 +59,12 @@ h1 span {
     text-shadow: var(--text-shadow-yellow);
 }
 .hero-cont {
-    background-image: url(../images/hero-clean.png);
+    background-image: url(../images/hero-pink-mix2.png);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
     height: 110vh;
-    background-color: rgb(var(--rgb-rose));
+    /* background-color: rgb(var(--rgb-rose)); */
 }
 .hero-cont h2, h1 span {
     font-family: var(--font-family-secondary);
@@ -101,7 +101,7 @@ h1 span {
 /* ------- ABOUT ------- */
 #about-me {
     background-color: rgb(var(--rgb-rose));
-    margin-top: -3rem;
+    min-height: 100vh;
 }
 #about-me h2 {
     background-color: rgb(var(--rgb-rose));
@@ -164,7 +164,8 @@ h1 span {
 
 /* ------- Cards ------- */
 #work-header-bird {
-    width: 10%;
+    min-width: 10%;
+    max-width: 100px;
     position: relative;
     bottom: -2.5rem;
 }
