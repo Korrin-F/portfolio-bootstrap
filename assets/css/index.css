@@ -258,17 +258,34 @@ h1 span {
 }
 .characteristic {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: var(--yellow) solid 6px;
-    border-radius: 50%;
+
     min-width: 325px;
     height: 325px;
     padding: 3rem;
+    position: relative;
   }
-  
-  
+  .characteristic p {
+    position: relative;
+    z-index: 2;
+  }
+  .circle {
+    background-color: var(--yellow);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute; 
+    z-index: 1;
+    top: 50%; 
+    left: 50%; 
+    /* transform: translate(-50%, -50%); Center the circle within its parent */
+  }
+  #circle1 {
+    transform: translate(-110%, -80%); /* Center the circle within its parent */
+  }
 
 /* adds styling to the nav menu after the menu items are collapsed */
 @media only screen and (max-width: 992px) {
