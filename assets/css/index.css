@@ -281,11 +281,12 @@ h1 span {
 #key-value h3 {
     background-color: var(--rose);
 }
-#key-value h3 {
+#key-value h2 {
     font-family: var(--font-family-code);
     position: relative;
     z-index: 2;
     width: max-content;
+    color: var(--dark);
 }
 .value {
     display: flex;
