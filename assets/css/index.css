@@ -140,7 +140,7 @@ h1 span {
     width: max-content;
     margin: auto;
 }
-#contact-content {
+.contact-content {
     border: 3px solid var(--dark);
     border-radius: 10px;
     width: max-content;
@@ -352,6 +352,13 @@ h1 span {
 #footer .nav-link:hover {
     color: var(--yellow);
     text-shadow: var(--text-shadow-hover);
+}
+.footer-link-cont {
+    border-left: 1px solid var(--rose);
+    padding-left: 1rem;
+}
+#footer .contact-content {
+    border-color: var(--rose);
 }
 
 /* adds styling to the nav menu after the menu items are collapsed */
