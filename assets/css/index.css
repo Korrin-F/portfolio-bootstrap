@@ -106,7 +106,7 @@ h1 span {
 /* ------- ABOUT ------- */
 #about-me {
     background-color: rgb(var(--rgb-rose));
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 #about-me h2 {
     background-color: rgb(var(--rgb-rose));
