@@ -154,17 +154,42 @@ h1 span {
     z-index: 1;
     transform: translate(0, 50%);
 }
-
-/* ------- Cards ------- */
-#work-header-bird {
-    min-width: 10%;
-    max-width: 100px;
+/* ------- Skills ------- */
+#skills-header-bird {
     position: relative;
-    bottom: -2.5rem;
+    right: 0;
+    transform: translate(0, 30%);
 }
-#work-spacer {
-    width: 12%; /* counters the width of the bird so the text stays centered */
+#skills {
+    background-color: var(--dark);
+    /* min-height: 100vh; */
 }
+#skills .section-header {
+    border-bottom-color: var(--rose);
+}
+#skills h2,
+#skills h3 {
+    background-color: var(--dark);
+}
+#skills h2,
+#skills h3,
+#skills p,
+#skills li {
+    color: var(--rose);
+}
+#skills ul {
+    border: 3px solid var(--rose);
+    border-radius: 10px;
+    transition: var(--transition-background-color);
+    /* width: 100%; */
+    /* padding: 1rem 2rem 1rem 2rem; */
+}
+#skills ul:hover {
+    background-color: var(--yellow);
+    border: 3px solid var(--yellow);  
+}
+/* ------- Cards ------- */
+
 .card {
     border: 8px solid var(--yellow);
     border-radius: 20px;
@@ -230,35 +255,7 @@ h1 span {
     transform: scaleX(-1);
 }
 
-/* ------- Skills & Characteristics ------- */
-#skills {
-    background-color: var(--dark);
-    /* min-height: 100vh; */
-}
-#skills .section-header {
-    border-bottom-color: var(--rose);
-}
-#skills h2,
-#skills h3 {
-    background-color: var(--dark);
-}
-#skills h2,
-#skills h3,
-#skills p,
-#skills li {
-    color: var(--rose);
-}
-#skills ul {
-    border: 3px solid var(--rose);
-    border-radius: 10px;
-    transition: var(--transition-background-color);
-    /* width: 100%; */
-    /* padding: 1rem 2rem 1rem 2rem; */
-}
-#skills ul:hover {
-    background-color: var(--yellow);
-    border: 3px solid var(--yellow);  
-}
+
 
 /* ------- Values ------- */
 #key-value {
@@ -350,9 +347,16 @@ h1 span {
     border-color: var(--rose);
 }
 
-@media only screen and () {
-    
+@media only screen and (min-width: 768px) {
+    #skills-header-cont{
+        position: relative;
+        transform: translate(0, -15%);
+    }
+    #skills-header-bird{
+        max-width: 100px;
+    }
 }
+
 /* adds styling to the nav menu after the menu items are collapsed */
 @media only screen and (max-width: 992px) {
     .navbar-collapse {
@@ -365,3 +369,4 @@ h1 span {
         text-shadow: var(--text-shadow-hover);
     }
 }
+
